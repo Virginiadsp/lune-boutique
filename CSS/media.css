@@ -1,0 +1,178 @@
+/*Responsividade*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /*Respondividade para tablet*/
+
+    /*Header*/
+    header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        margin-top: -40px;
+    }
+
+    #links a {
+        font-size: 18px;
+    }
+
+    #img-logo {
+        width: 100px;
+    }
+
+    /*Roupas*/
+    .h2-categorias {
+        font-size: 28px;
+    }
+
+    .car-itens {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /*Sobre nós*/
+    #sobre-nos h2,
+    .aviso-compras h2 {
+        font-size: 28px;
+    }
+
+    #sobre-nos p,
+    .aviso-compras p {
+        font-size: 21px;
+    }
+
+    .botao-comprar {
+        font-size: 1rem;
+    }
+
+    /* Rodapé */
+    footer {
+        flex-direction: row;
+        gap: 10px;
+        padding: 26px 15px;
+    }
+
+    footer h1 {
+        font-size: 23px;
+    }
+
+    footer p {
+        max-width: 100%;
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    footer img {
+        width: 44px;
+        margin-top: 5px;
+    }
+
+    /*Whats*/
+    #whats img {
+        width: 60%;
+    }
+
+
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+
+    /*Header*/
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: -52px;
+    }
+
+    #links {
+        display: flex;
+    }
+
+    #links a {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    #img-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    /*Sobre parte 1*/
+    .texto-animado p {
+        font-size: 16px;
+    }
+
+    /*Roupas*/
+    .h2-categorias {
+        font-size: 22px;
+    }
+
+    .car-itens {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .car-itens h3 {
+        font-size: 18px;
+    }
+
+    /*Sobre nós*/
+    #sobre-nos h2,
+    .aviso-compras h2 {
+        font-size: 23px;
+    }
+
+    #sobre-nos p,
+    .aviso-compras p {
+        font-size: 19px;
+    }
+
+    .botao-comprar {
+        font-size: 0.9rem;
+    }
+
+    /* Rodapé */
+    footer {
+        flex-direction: row;
+        gap: 8px;
+        padding: 26px 15px;
+        white-space: nowrap;
+    }
+
+    footer h1 {
+        font-size: 15px;
+    }
+
+    footer p {
+        max-width: 100%;
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+
+    footer img {
+        width: 44px;
+        margin-top: 5px;
+    }
+
+    /*Whats*/
+    #whats img {
+        width: 50%;
+    }
+
+    #whats {
+        width: 100px;
+        height: 50px;
+        right: -125px;
+        bottom: -30px;
+    }
+
+}

@@ -1,0 +1,309 @@
+/*Geral*/
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Dancing+Script:wght@400..700&family=Delius&family=Oleo+Script+Swash+Caps:wght@400;700&family=Parisienne&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Dancing+Script:wght@400..700&family=Delius&family=Felipa&family=Lily+Script+One&family=Oleo+Script+Swash+Caps:wght@400;700&family=Parisienne&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: "Delius", cursive;
+    background-color: rgb(244, 219, 235);
+    text-align: center;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*Header*/
+header {
+    background-color: rgb(244, 113, 198);
+    color: var(--branc);
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+    font-size: 25px;
+    transition: 0.3s;
+    color: #ffffff;
+}
+
+#links :hover {
+    background-color: #dc60a0;
+    transform: scale(1.05);
+}
+
+#links a {
+    padding: 15px;
+    font-size: 20px;
+    background-color: rgb(232, 120, 193);
+    border: 1px solid pink;
+    border-radius: 30px;
+} 
+
+nav {
+    padding: 10px;
+}
+
+
+/*Faixa promocional*/
+.faixa-promocional {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff0f5;
+}
+
+.texto-animado {
+    display: flex;
+    width: max-content;
+    animation: passarTexto 20s linear infinite;
+}
+
+.texto-animado p {
+    flex-shrink: 0;
+    white-space: nowrap;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+@keyframes passarTexto {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/*Banner*/
+#banner{
+    width: 100%;
+}
+
+#banner img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/*Roupas*/
+.car-itens{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 95vw;
+    gap: 30px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.car-itens img{
+    width: 100%;
+}
+
+.h2-categorias{
+    color: #a51e68;
+}
+
+
+/*Sobre*/
+#sobre-nos{
+    background-color: rgb(244, 113, 198);
+    padding: 50px;
+}
+
+#sobre-nos p{
+    text-align: justify;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+#sobre-nos h2{
+    text-align: center;
+    color: #a51e68;
+    font-size: 2rem;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+
+/*Aviso compras*/
+.aviso-compras {
+    background-color: #fff0f8;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: -40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px; 
+}
+
+.aviso-compras h2 {
+    color: #a51e68;
+    font-size: 2rem;
+    font-style: normal;
+}
+
+.aviso-compras p {
+    color: #654354;
+    text-align: center;
+    line-height: 1.7em;
+    border-radius: 10px;
+    font-size: 22px;
+    max-width: 1400px;
+}
+
+.botao-comprar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #08a608;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.botao-comprar:hover {
+    background-color: #078307;
+    transform: scale(1.05);
+} 
+
+.aviso-compras small {
+    color: #936b81;
+} 
+
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(244, 113, 198);
+}
+
+
+/*Títulos*/
+h1 {
+    font-family: "Parisienne", cursive;
+    color: #a51e68;
+}
+
+
+.h2-categorias {
+    font-style: normal;
+    font-size: 35px;
+    padding-bottom: 1.7em;
+    padding-top: 1.7em;
+    background-color: white;
+    padding: 30px;
+}
+
+
+/*Imagens*/
+#img-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.img-topo {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.sobre-nos img {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.55);
+}
+
+footer img {
+    width: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+/*Links*/
+a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--branc);
+    background-color: var(--volt);
+}
+
+a:hover {
+    background-color:#dc60a0;
+    transform: scale(1.05);
+}
+
+footer a {
+    background-color: transparent;
+}
+
+footer a:hover {
+    background-color: transparent;
+}
+
+
+/*separador*/
+.separador {
+    padding-top: 70px;
+}
+
+
+/*whats*/
+#whats {
+    width: 100px;
+    height: 50px;
+    right: -110px;
+    bottom: -35px;
+    position: fixed;
+    margin: 7em;
+    color: var(--indig);
+    text-shadow: 1px 1px 1px var(--branc);
+    z-index: 1;
+    transition: 0.3s;
+}
+
+#whats:hover{
+    transform: scale(1.05);
+}
+
+#whats a {
+    background-color: transparent;
+}
+
+#whats img {
+    width: 70%;
+}
